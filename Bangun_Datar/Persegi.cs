@@ -11,6 +11,10 @@ namespace Bangun_Datar {
 			return s * s;
 		}
 
+		public double keliling_persegi(double s)
+        {
+            return 4 * s;
+        }
 
-	}
+    }
 }
