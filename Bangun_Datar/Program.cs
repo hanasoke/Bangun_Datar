@@ -7,6 +7,7 @@
             Persegi persegi = new Persegi();
             Persegi_Panjang Persegi_Panjang = new Persegi_Panjang();
             Layang_Layang layang_Layang = new Layang_Layang();
+            Belah_Ketupat belah_ketupat = new Belah_Ketupat();
 
             Console.WriteLine("=== List Bangun Datar ===");
 
@@ -86,6 +87,25 @@
                     }
                     break;
 
+                case 4:
+                    if (choose == "luas")
+                    {
+                        Console.Write("Masukkan diagonal 1 : ");
+                        double d1 = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Masukkan diagonal 2 : ");
+                        double d2 = Convert.ToDouble(Console.ReadLine());
+                        double luas = belah_ketupat.luas(d1, d2);
+                        Console.WriteLine($"Luas Belah Ketupat : {luas}");
+                    }
+                    else if (choose == "keliling")
+                    {
+                        Console.Write("Masukkan Sisi : ");
+                        double s = Convert.ToDouble(Console.ReadLine());
+                        double keliling = belah_ketupat.keliling(s);
+                        Console.WriteLine($"Keliling Belah Ketupat : {keliling}");
+                    }
+
+                    break;
                 default:
                     Console.WriteLine("Silahkan pilih bangun datar yang ada dilist");
                     break;
