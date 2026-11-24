@@ -105,7 +105,29 @@
                         double keliling = belah_ketupat.keliling(s);
                         Console.WriteLine($"Keliling Belah Ketupat : {keliling}");
                     }
+                    break;
 
+                case 5:
+                    if (choose == "luas")
+                    {
+                        Console.Write("Masukkan alas : ");
+                        double a = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Masukkan tinggi : ");
+                        double t = Convert.ToDouble(Console.ReadLine());
+                        double luas = segitiga.luas(a, t);
+                        Console.WriteLine($"Luas Segitiga : {luas}");
+                    }
+                    else if (choose == "keliling")
+                    {
+                        Console.Write("Masukkan sisi a : ");
+                        double a = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Masukkan sisi b : ");
+                        double b = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Masukkan sisi c : ");
+                        double c = Convert.ToDouble(Console.ReadLine());
+                        double keliling = segitiga.keliling(a, b, c);
+                        Console.WriteLine($"Keliling Segitiga : {keliling}");
+                    }
                     break;
                 default:
                     Console.WriteLine("Silahkan pilih bangun datar yang ada dilist");
