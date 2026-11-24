@@ -8,6 +8,7 @@
             Persegi_Panjang Persegi_Panjang = new Persegi_Panjang();
             Layang_Layang layang_Layang = new Layang_Layang();
             Belah_Ketupat belah_ketupat = new Belah_Ketupat();
+            Segitiga segitiga = new Segitiga();
 
             Console.WriteLine("=== List Bangun Datar ===");
 
