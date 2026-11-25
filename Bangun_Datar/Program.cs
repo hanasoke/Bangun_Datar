@@ -10,6 +10,7 @@
             Belah_Ketupat belah_ketupat = new Belah_Ketupat();
             Segitiga segitiga = new Segitiga();
             Lingkaran lingkaran = new Lingkaran();
+            Jajargenjang jajargenjang = new Jajargenjang();
 
             Console.WriteLine("=== List Bangun Datar ===");
 
@@ -147,6 +148,28 @@
                         Console.WriteLine($"Luas Lingkaran : {luas}");
                     }
                     break;
+
+                case 7:
+                    if (choose == "keliling")
+                    {
+                        Console.Write("Masukkan alas : ");
+                        double a = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Masukkan tinggi :");
+                        double t = Convert.ToDouble(Console.ReadLine());
+                        double keliling = jajargenjang.keliling(a, t);
+                        Console.WriteLine($"Keliling Jajargenjang : {keliling}");
+                    }
+                    else if (choose == "luas")
+                    {
+                        Console.Write("masukkan alas : ");
+                        double a = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("masukkan sisi miring : ");
+                        double b = Convert.ToDouble(Console.ReadLine());
+                        double luas = jajargenjang.luas(a, b);
+                        Console.WriteLine($"Luas Jajargenjang : {luas}");
+                    }
+                    break;
+
                 default:
                     Console.WriteLine("Silahkan pilih bangun datar yang ada dilist");
                     break;
