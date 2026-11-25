@@ -9,6 +9,7 @@
             Layang_Layang layang_Layang = new Layang_Layang();
             Belah_Ketupat belah_ketupat = new Belah_Ketupat();
             Segitiga segitiga = new Segitiga();
+            Lingkaran lingkaran = new Lingkaran();
 
             Console.WriteLine("=== List Bangun Datar ===");
 
@@ -128,6 +129,12 @@
                         double keliling = segitiga.keliling(a, b, c);
                         Console.WriteLine($"Keliling Segitiga : {keliling}");
                     }
+                    break;
+
+                case 6:
+                    if (choose == "keliling")
+                    { }
+
                     break;
                 default:
                     Console.WriteLine("Silahkan pilih bangun datar yang ada dilist");
