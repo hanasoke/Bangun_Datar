@@ -11,6 +11,7 @@
             Segitiga segitiga = new Segitiga();
             Lingkaran lingkaran = new Lingkaran();
             Jajargenjang jajargenjang = new Jajargenjang();
+            Trapesium trapesium = new Trapesium();
 
             Console.WriteLine("=== List Bangun Datar ===");
 
@@ -167,6 +168,33 @@
                         double b = Convert.ToDouble(Console.ReadLine());
                         double luas = jajargenjang.luas(a, b);
                         Console.WriteLine($"Luas Jajargenjang : {luas}");
+                    }
+                    break;
+
+                case 8:
+                    if(choose == "keliling")
+                    {
+                        Console.Write("masukkan sisi sejajar terpanjang : ");
+                        double a = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("masukkan sisi sejajar terpendek : ");
+                        double b = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("masukkan sisi miring kiri : ");
+                        double c = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("masukkan sisi miring kanan : ");
+                        double d = Convert.ToDouble(Console.ReadLine());
+                        double keliling = trapesium.keliling(a, b, c, d);
+                        Console.WriteLine($"Keliling Trapesium : {keliling}");
+                    }
+                    else if(choose == "luas")
+                    {
+                        Console.Write("masukkan sisi sejajar terpanjang : ");
+                        double a = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("masukkan sisi sejajar terpendek : ");
+                        double b = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("masukkan tinggi : ");
+                        double t = Convert.ToDouble(Console.ReadLine());
+                        double luas = trapesium.luas(a, b, t);
+                        Console.WriteLine($"Luas Trapesium : {luas}");
                     }
                     break;
 
