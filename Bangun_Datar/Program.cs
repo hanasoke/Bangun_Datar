@@ -133,8 +133,19 @@
 
                 case 6:
                     if (choose == "keliling")
-                    { }
-
+                    {
+                        Console.Write("Masukkan jari - jari : ");
+                        double r = Convert.ToDouble(Console.ReadLine());
+                        double keliling = lingkaran.keliling(r);
+                        Console.WriteLine($"Keliling Lingkaran : {keliling}");
+                    } 
+                    else if (choose == "luas")
+                    {
+                        Console.Write("Masukkan jari - jari : ");
+                        double r = Convert.ToDouble(Console.ReadLine());
+                        double luas = lingkaran.luas(r);
+                        Console.WriteLine($"Luas Lingkaran : {luas}");
+                    }
                     break;
                 default:
                     Console.WriteLine("Silahkan pilih bangun datar yang ada dilist");
