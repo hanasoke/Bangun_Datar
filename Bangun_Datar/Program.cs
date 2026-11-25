@@ -35,118 +35,118 @@
                 case 1:
                     if (choose == "keliling")
                     {
-                        Console.Write("Masukkan sisi : ");
+                        Console.Write("Masukkan ukuran sisi : ");
                         double s = Convert.ToDouble(Console.ReadLine());
                         double keliling = persegi.keliling_persegi(s);
-                        Console.WriteLine($"Keliling Persegi : {keliling}");
+                        Console.WriteLine($"Keliling Persegi : {keliling} cm");
                     }
                     else if (choose == "luas")
                     {
-                        Console.Write("Masukkan sisi : ");
+                        Console.Write("Masukkan ukuran sisi : ");
                         double s = Convert.ToDouble(Console.ReadLine());
                         double luas = persegi.luas_persegi(s);
-                        Console.WriteLine($"Luas Persegi : {luas}");
+                        Console.WriteLine($"Luas Persegi : {luas} cm");
                     }
                     break;
-
+                    
                 case 2: 
                     if(choose == "keliling")
                     {
-                        Console.Write("Masukkan panjang : ");
+                        Console.Write("Masukkan ukuran panjang : ");
                         double p = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("Masukkan lebar : ");
+                        Console.Write("Masukkan ukuran lebar : ");
                         double l = Convert.ToDouble(Console.ReadLine());
                         double keliling = Persegi_Panjang.keliling_persegi_panjang(p, l);
-                        Console.WriteLine($"Keliling Persegi Panjang : {keliling}");
+                        Console.WriteLine($"Keliling Persegi Panjang : {keliling} cm");
                     }
                     else if (choose == "luas")
                     {
-                        Console.Write("Masukkan panjang : ");
+                        Console.Write("Masukkan ukuran panjang : ");
                         double p = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("Masukkan lebar : ");
+                        Console.Write("Masukkan ukuran lebar : ");
                         double l = Convert.ToDouble(Console.ReadLine());
                         double luas = Persegi_Panjang.luas_persegi_panjang(p, l);
-                        Console.WriteLine($"Luas Persegi Panjang : {luas}");
+                        Console.WriteLine($"Luas Persegi Panjang : {luas} cm");
                     }
                     break;
 
                 case 3:
                     if (choose == "keliling")
                     {
-                        Console.Write("Masukkan sisi a : ");
+                        Console.Write("Masukkan ukuran sisi a : ");
                         double a = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("Masukkan sisi b : ");
+                        Console.Write("Masukkan ukuran sisi b : ");
                         double b = Convert.ToDouble(Console.ReadLine());
                         double keliling = layang_Layang.keliling(a, b);
-                        Console.WriteLine($"Keliling Layang-Layang : {keliling}");
+                        Console.WriteLine($"Keliling Layang-Layang : {keliling} cm");
                     }
                     else if (choose == "luas")
                     {
-                        Console.Write("Masukkan diagonal 1 : ");
+                        Console.Write("Masukkan ukuran diagonal 1 : ");
                         double d1 = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("Masukkan diagonal 2 : ");
+                        Console.Write("Masukkan ukuran diagonal 2 : ");
                         double d2 = Convert.ToDouble(Console.ReadLine());
                         double luas = layang_Layang.luas(d1, d2);
-                        Console.WriteLine($"Luas Layang-Layang : {luas}");
+                        Console.WriteLine($"Luas Layang-Layang : {luas} cm");
                     }
                     break;
 
                 case 4:
                     if (choose == "luas")
                     {
-                        Console.Write("Masukkan diagonal 1 : ");
+                        Console.Write("Masukkan ukuran diagonal 1 : ");
                         double d1 = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("Masukkan diagonal 2 : ");
+                        Console.Write("Masukkan ukuran diagonal 2 : ");
                         double d2 = Convert.ToDouble(Console.ReadLine());
                         double luas = belah_ketupat.luas(d1, d2);
-                        Console.WriteLine($"Luas Belah Ketupat : {luas}");
+                        Console.WriteLine($"Luas Belah Ketupat : {luas} cm");
                     }
                     else if (choose == "keliling")
                     {
-                        Console.Write("Masukkan Sisi : ");
+                        Console.Write("Masukkan ukuran sisi : ");
                         double s = Convert.ToDouble(Console.ReadLine());
                         double keliling = belah_ketupat.keliling(s);
-                        Console.WriteLine($"Keliling Belah Ketupat : {keliling}");
+                        Console.WriteLine($"Keliling Belah Ketupat : {keliling} cm");
                     }
                     break;
 
                 case 5:
                     if (choose == "luas")
                     {
-                        Console.Write("Masukkan alas : ");
+                        Console.Write("Masukkan ukuran alas : ");
                         double a = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("Masukkan tinggi : ");
+                        Console.Write("Masukkan ukuran tinggi : ");
                         double t = Convert.ToDouble(Console.ReadLine());
                         double luas = segitiga.luas(a, t);
-                        Console.WriteLine($"Luas Segitiga : {luas}");
+                        Console.WriteLine($"Luas Segitiga : {luas} cm");
                     }
                     else if (choose == "keliling")
                     {
-                        Console.Write("Masukkan sisi a : ");
+                        Console.Write("Masukkan ukuran sisi a : ");
                         double a = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("Masukkan sisi b : ");
+                        Console.Write("Masukkan ukuran sisi b : ");
                         double b = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("Masukkan sisi c : ");
+                        Console.Write("Masukkan ukuran sisi c : ");
                         double c = Convert.ToDouble(Console.ReadLine());
                         double keliling = segitiga.keliling(a, b, c);
-                        Console.WriteLine($"Keliling Segitiga : {keliling}");
+                        Console.WriteLine($"Keliling Segitiga : {keliling} cm");
                     }
                     break;
 
                 case 6:
                     if (choose == "keliling")
                     {
-                        Console.Write("Masukkan jari - jari : ");
+                        Console.Write("Masukkan ukuran jari - jari : ");
                         double r = Convert.ToDouble(Console.ReadLine());
                         double keliling = lingkaran.keliling(r);
-                        Console.WriteLine($"Keliling Lingkaran : {keliling}");
+                        Console.WriteLine($"Keliling Lingkaran : {keliling} cm");
                     } 
                     else if (choose == "luas")
                     {
-                        Console.Write("Masukkan jari - jari : ");
+                        Console.Write("Masukkan ukuran jari - jari : ");
                         double r = Convert.ToDouble(Console.ReadLine());
                         double luas = lingkaran.luas(r);
-                        Console.WriteLine($"Luas Lingkaran : {luas}");
+                        Console.WriteLine($"Luas Lingkaran : {luas} cm");
                     }
                     break;
 
